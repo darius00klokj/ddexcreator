@@ -1,0 +1,23 @@
+{
+    "name": "darius00klokj/indexcache",
+    "type": "library",
+    "description": "DDEX nodes library",
+    "keywords": ["ddex","nodes"],
+    "homepage": "https://github.com/darius00klokj/indexcache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darius Karremans",
+            "email": "darius00klokj@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "IndexCache\\": "src"
+        }
+    }
+}
