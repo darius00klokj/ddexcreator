@@ -21,7 +21,7 @@ class DDEXNode {
         
         $name = static::NAME;
         
-        $xml = new SimpleXMLElement(sprintf('<%s/>', $name));
+        //$xml = new SimpleXMLElement(sprintf('<%s/>', $name));
         $vars = get_class_vars(static::class);
         
         $xmlnodes = [];
@@ -36,7 +36,9 @@ class DDEXNode {
             }
         }
         
-        return $xml->asXML();
+        var_dump($xmlnodes);
+        
+        //return $xml->asXML();
     }
 
 }
