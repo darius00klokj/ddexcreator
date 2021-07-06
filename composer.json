@@ -1,9 +1,9 @@
 {
-    "name": "darius00klokj/indexcache",
+    "name": "darius00klokj/ddexcreator",
     "type": "library",
     "description": "DDEX nodes library",
     "keywords": ["ddex","nodes"],
-    "homepage": "https://github.com/darius00klokj/indexcache",
+    "homepage": "https://github.com/darius00klokj/ddexcreator",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "IndexCache\\": "src"
+            "DDEX\\": "src"
         }
     }
 }
