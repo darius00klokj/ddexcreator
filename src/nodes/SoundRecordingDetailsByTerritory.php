@@ -25,7 +25,7 @@ class SoundRecordingDetailsByTerritory {
     
     /**
      * 
-     * @var DisplayArtist
+     * @var DisplayArtist[]
      */
     public $DisplayArtist;
     
@@ -64,6 +64,15 @@ class SoundRecordingDetailsByTerritory {
     function __construct($TerritoryCode) {
         $this->TerritoryCode = $TerritoryCode;
     }
+    
+    function addDisplayArtist(DisplayArtist $art){
+        
+        if(!$this->DisplayArtist){
+            $this->DisplayArtist = [];
+        }
+        
+        $this->DisplayArtist[] = $art;
+    }
 
     function getTerritoryCode() {
         return $this->TerritoryCode;
@@ -71,10 +80,6 @@ class SoundRecordingDetailsByTerritory {
 
     function getTitle(): array {
         return $this->Title;
-    }
-
-    function getDisplayArtist(): DisplayArtist {
-        return $this->DisplayArtist;
     }
 
     function getIndirectResourceContributor(): array {
@@ -109,10 +114,6 @@ class SoundRecordingDetailsByTerritory {
         $this->Title = $Title;
     }
 
-    function setDisplayArtist(DisplayArtist $DisplayArtist): void {
-        $this->DisplayArtist = $DisplayArtist;
-    }
-
     function setIndirectResourceContributor(array $IndirectResourceContributor): void {
         $this->IndirectResourceContributor = $IndirectResourceContributor;
     }
@@ -136,8 +137,13 @@ class SoundRecordingDetailsByTerritory {
     function setFile(File $File): void {
         $this->File = $File;
     }
-
-
     
-    
+    function getDisplayArtist(): array {
+        return $this->DisplayArtist;
+    }
+
+    function setDisplayArtist(array $DisplayArtist): void {
+        $this->DisplayArtist = $DisplayArtist;
+    }
+
 }
