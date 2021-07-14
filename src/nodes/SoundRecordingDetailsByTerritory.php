@@ -13,7 +13,7 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class SoundRecordingDetailsByTerritory {
+class SoundRecordingDetailsByTerritory extends \DDEX\DDEXNode{
     
     public $TerritoryCode;
     
