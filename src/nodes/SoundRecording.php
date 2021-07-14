@@ -54,6 +54,14 @@ class SoundRecording extends \DDEX\DDEXNode{
         
     }
     
+    function addSoundRecordingDetailsByTerritory(SoundRecordingDetailsByTerritory $srt){
+        if(!$this->SoundRecordingDetailsByTerritory){
+            $this->SoundRecordingDetailsByTerritory = [];
+        }
+        
+        $this->SoundRecordingDetailsByTerritory[] = $srt;
+    }
+    
     function getSoundRecordingType() {
         return $this->SoundRecordingType;
     }
