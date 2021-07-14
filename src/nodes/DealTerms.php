@@ -10,15 +10,19 @@ namespace DDEX\nodes;
  */
 class DealTerms extends \DDEX\DDEXNode{
     
-    private $CommercialModelType;
-    
     /**
      * 
      * @var Usage
      */
-    private $Usage;
-    private $TerritoryCode;
-    private $StartDateTime;
+    public $Usage;
+    public $TerritoryCode;
+    public $CommercialModelType;
+    
+    /**
+     * 
+     * @var ValidityPeriod
+     */
+    public $ValidityPeriod;
     
     function getCommercialModelType() {
         return $this->CommercialModelType;
@@ -32,10 +36,6 @@ class DealTerms extends \DDEX\DDEXNode{
         return $this->TerritoryCode;
     }
 
-    function getStartDateTime() {
-        return $this->StartDateTime;
-    }
-
     function setCommercialModelType($CommercialModelType): void {
         $this->CommercialModelType = $CommercialModelType;
     }
@@ -47,11 +47,13 @@ class DealTerms extends \DDEX\DDEXNode{
     function setTerritoryCode($TerritoryCode): void {
         $this->TerritoryCode = $TerritoryCode;
     }
-
-    function setStartDateTime($StartDateTime): void {
-        $this->StartDateTime = $StartDateTime;
+    
+    function getValidityPeriod(): ValidityPeriod {
+        return $this->ValidityPeriod;
     }
 
+    function setValidityPeriod(ValidityPeriod $ValidityPeriod): void {
+        $this->ValidityPeriod = $ValidityPeriod;
+    }
 
-    
 }

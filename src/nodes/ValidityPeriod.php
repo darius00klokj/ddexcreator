@@ -15,9 +15,11 @@ namespace DDEX\nodes;
  */
 class ValidityPeriod extends \DDEX\DDEXNode{
     
-    const NAME = self::class;
+    public $StartDateTime;
     
-    private $StartDateTime;
+    function __construct($StartDateTime) {
+        $this->StartDateTime = $StartDateTime;
+    }
     
     function getStartDateTime() {
         return $this->StartDateTime;

@@ -16,4 +16,8 @@ namespace DDEX;
 
 class DDEX {
     
+    const TERRITORY_CODE_WORLD = 'World';
+    const PARENT_WARNING_NONEXPLICIT = 'NotExplicit';
+    const PARENT_WARNING_EXPLICIT = 'Explicit';
+    
 }

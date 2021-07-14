@@ -18,13 +18,17 @@ class ReleaseDeal extends \DDEX\DDEXNode{
     
     const NAME = 'ReleaseDeal';
 
-    private $DealReleaseReference;
+    public $DealReleaseReference;
     /**
      * 
      * @var Deal
      */
-    private $Deal;
-    private $EffectiveDate;
+    public $Deal;
+    public $EffectiveDate;
+    
+    function vars(){
+        return get_object_vars($this);
+    }
 
     function getDealReleaseReference() {
         return $this->DealReleaseReference;

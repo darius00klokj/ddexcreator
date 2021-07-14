@@ -15,9 +15,9 @@ namespace DDEX\nodes;
  */
 class Usage extends \DDEX\DDEXNode{
     
-    const NAME = self::class;
+    const NAME = 'Usage';
     
-    private $UseType;
+    public $UseType;
     
     function getUseType() {
         return $this->UseType;

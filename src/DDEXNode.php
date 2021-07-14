@@ -8,6 +8,8 @@
 
 namespace DDEX;
 
+use DDEX\DDEXSingleNode;
+
 /**
  * Description of DDEXNode
  *
@@ -15,30 +17,81 @@ namespace DDEX;
  */
 class DDEXNode {
 
-    const NAME = self::class;
-    
-    public function toXML() {
-        
-        $name = static::NAME;
-        
-        //$xml = new SimpleXMLElement(sprintf('<%s/>', $name));
-        $vars = get_class_vars(static::class);
-        
-        $xmlnodes = [];
-        
-        foreach($vars as $name => $value){
-            
-            if(is_a($value, DDEXNode::class)){
-                $xmlnodes[$name] = $value->toXML();
-            }
-            else{
-                $xmlnodes[$name] = $value;
+    private $attrs = [];
+
+    /**
+     * 
+     * @return \SimpleXMLElement
+     */
+    public function toXML(\SimpleXMLElement $sxe = NULL) {
+
+        $name = $this->getName();
+        $vars = $this->vars();
+        $attrs = $this->attrs();
+
+        /**
+         * Create a parent, but we will work with the child directly
+         */
+        $sxe = is_null($sxe) ? new \SimpleXMLElement('<PARENT/>') : $sxe;
+        $child = $sxe->addChild($name);
+        $this->loopAttrs($child, $attrs);
+        $this->loop($child, $vars);
+
+        return $child;
+    }
+
+    function loopAttrs(\SimpleXMLElement $sxe, $attrs) {
+        if ($attrs) {
+            foreach ($attrs as $name => $attr) {
+                if (!$sxe->attributes($name)) {
+                    $sxe->addAttribute($name, $attr);
+                }
             }
         }
-        
-        var_dump($xmlnodes);
-        
-        //return $xml->asXML();
+    }
+
+    function loop(\SimpleXMLElement $sxe, $vars) {
+        foreach ($vars as $name => $value) {
+
+            if (is_null($value)) {
+                continue;
+            }
+
+            if (is_array($value)) {
+                $this->loop($sxe, $value);
+            } elseif (is_a($value, DDEXNode::class)) {
+                $value->toXML($sxe);
+            } elseif (is_a($value, DDEXSingleNode::class)) {
+                /* @var $singleNode \DDEX\DDEXSingleNode */
+                $singleNode = $value;
+                $child = $sxe->addChild($singleNode->getName(), $singleNode->getValue());
+                $this->loopAttrs($child, $singleNode->getAttrs());
+            } else {
+                $sxe->addChild($name, $value);
+            }
+        }
+    }
+
+    function addAttr($name, $value) {
+        $this->attrs[$name] = $value;
+    }
+
+    function attrs() {
+        return $this->attrs;
+    }
+
+    function vars() {
+        $vars = get_object_vars($this);
+        unset($vars['attrs']);
+        return $vars;
+    }
+
+    function getName() {
+        $name = static::class;
+        $parts = explode("\\", $name);
+
+        $nodeName = $parts[count($parts) - 1];
+        return $nodeName;
     }
 
 }

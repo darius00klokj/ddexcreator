@@ -19,7 +19,7 @@ class Deal extends \DDEX\DDEXNode{
      * 
      * @var DealTerms
      */
-    private $DealTerms;
+    public $DealTerms;
     
     function getDealTerms(): DealTerms {
         return $this->DealTerms;
