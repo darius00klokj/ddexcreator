@@ -61,6 +61,12 @@ class SoundRecordingDetailsByTerritory {
      */
     public $File;
     
+    /**
+     * 
+     * @var TechnicalSoundRecordingDetails
+     */
+    public $TechnicalSoundRecordingDetails;
+    
     function __construct($TerritoryCode) {
         $this->TerritoryCode = $TerritoryCode;
     }
@@ -153,6 +159,14 @@ class SoundRecordingDetailsByTerritory {
 
     function setDisplayArtist(array $DisplayArtist): void {
         $this->DisplayArtist = $DisplayArtist;
+    }
+    
+    function getTechnicalSoundRecordingDetails(): TechnicalSoundRecordingDetails {
+        return $this->TechnicalSoundRecordingDetails;
+    }
+
+    function setTechnicalSoundRecordingDetails(TechnicalSoundRecordingDetails $TechnicalSoundRecordingDetails): void {
+        $this->TechnicalSoundRecordingDetails = $TechnicalSoundRecordingDetails;
     }
 
 }
