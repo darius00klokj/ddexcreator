@@ -18,8 +18,6 @@ class NewReleaseMessage extends \DDEX\DDEXNode{
     const MESSAGE_UPDATE = 'UpdateMessage';
     const MESSAGE_ORIGINAL = 'OriginalMessage';
     
-    private $type = 'ern';
-    
     /**
      * 
      * @var MessageHeader
@@ -45,5 +43,51 @@ class NewReleaseMessage extends \DDEX\DDEXNode{
      * @var DealList
      */
     public $DealList;
+    
+    function __construct($UpdateIndicator) {
+        $this->UpdateIndicator = $UpdateIndicator;
+    }
+    
+    function getMessageHeader(): MessageHeader {
+        return $this->MessageHeader;
+    }
+
+    function getUpdateIndicator() {
+        return $this->UpdateIndicator;
+    }
+
+    function getResourceList(): ResourceList {
+        return $this->ResourceList;
+    }
+
+    function getReleaseList(): ReleaseList {
+        return $this->ReleaseList;
+    }
+
+    function getDealList(): DealList {
+        return $this->DealList;
+    }
+
+    function setMessageHeader(MessageHeader $MessageHeader): void {
+        $this->MessageHeader = $MessageHeader;
+    }
+
+    function setUpdateIndicator($UpdateIndicator): void {
+        $this->UpdateIndicator = $UpdateIndicator;
+    }
+
+    function setResourceList(ResourceList $ResourceList): void {
+        $this->ResourceList = $ResourceList;
+    }
+
+    function setReleaseList(ReleaseList $ReleaseList): void {
+        $this->ReleaseList = $ReleaseList;
+    }
+
+    function setDealList(DealList $DealList): void {
+        $this->DealList = $DealList;
+    }
+
+
     
 }
