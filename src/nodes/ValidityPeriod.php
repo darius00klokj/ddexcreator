@@ -15,17 +15,21 @@ namespace DDEX\nodes;
  */
 class ValidityPeriod extends \DDEX\DDEXNode{
     
+    /**
+     * 
+     * @var DDEXDateTime
+     */
     public $StartDateTime;
     
-    function __construct($StartDateTime) {
+    function __construct(DDEXDateTime $StartDateTime) {
         $this->StartDateTime = $StartDateTime;
     }
-    
-    function getStartDateTime() {
+
+    function getStartDateTime(): DDEXDateTime {
         return $this->StartDateTime;
     }
 
-    function setStartDateTime($StartDateTime): void {
+    function setStartDateTime(DDEXDateTime $StartDateTime): void {
         $this->StartDateTime = $StartDateTime;
     }
 

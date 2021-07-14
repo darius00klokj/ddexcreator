@@ -66,6 +66,10 @@ class DDEXNode {
                 $singleNode = $value;
                 $child = $sxe->addChild($singleNode->getName(), $singleNode->getValue());
                 $this->loopAttrs($child, $singleNode->getAttrs());
+            } elseif (is_a($value, DDEXDateTime::class)) {
+                /* @var $timeNode \DDEX\DDEXDateTime */
+                $timeNode = $value;
+                $sxe->addChild($name, $timeNode->getAsString());
             } else {
                 $sxe->addChild($name, $value);
             }
