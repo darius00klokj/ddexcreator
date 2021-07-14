@@ -24,6 +24,11 @@ class ReleaseDeal extends \DDEX\DDEXNode{
      * @var Deal
      */
     public $Deal;
+    
+    /**
+     * 
+     * @var \DDEX\DDEXDateTime
+     */
     public $EffectiveDate;
     
     function vars(){
@@ -38,10 +43,6 @@ class ReleaseDeal extends \DDEX\DDEXNode{
         return $this->Deal;
     }
 
-    function getEffectiveDate() {
-        return $this->EffectiveDate;
-    }
-
     function setDealReleaseReference($DealReleaseReference): void {
         $this->DealReleaseReference = $DealReleaseReference;
     }
@@ -49,8 +50,13 @@ class ReleaseDeal extends \DDEX\DDEXNode{
     function setDeal(Deal $Deal): void {
         $this->Deal = $Deal;
     }
+    
+    function getEffectiveDate(): \DDEX\DDEXDateTime {
+        return $this->EffectiveDate;
+    }
 
-    function setEffectiveDate($EffectiveDate): void {
+    function setEffectiveDate(\DDEX\DDEXDateTime $EffectiveDate): void {
         $this->EffectiveDate = $EffectiveDate;
     }
+
 }

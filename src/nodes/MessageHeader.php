@@ -32,7 +32,7 @@ class MessageHeader extends \DDEX\DDEXNode {
 
     /**
      * 2021-07-01T01:45:54.044878
-     * @var type
+     * @var \DDEX\DDEXDateTime
      */
     public $MessageCreatedDateTime;
     public $MessageControlType;
@@ -58,10 +58,6 @@ class MessageHeader extends \DDEX\DDEXNode {
         return $this->MessageRecipient;
     }
 
-    function getMessageCreatedDateTime(): type {
-        return $this->MessageCreatedDateTime;
-    }
-
     function getMessageControlType() {
         return $this->MessageControlType;
     }
@@ -82,12 +78,17 @@ class MessageHeader extends \DDEX\DDEXNode {
         $this->MessageRecipient = $MessageRecipient;
     }
 
-    function setMessageCreatedDateTime(type $MessageCreatedDateTime) {
-        $this->MessageCreatedDateTime = $MessageCreatedDateTime;
-    }
-
     function setMessageControlType($MessageControlType) {
         $this->MessageControlType = $MessageControlType;
     }
+    
+    function getMessageCreatedDateTime(): \DDEX\DDEXDateTime {
+        return $this->MessageCreatedDateTime;
+    }
+
+    function setMessageCreatedDateTime(\DDEX\DDEXDateTime $MessageCreatedDateTime): void {
+        $this->MessageCreatedDateTime = $MessageCreatedDateTime;
+    }
+
 
 }
