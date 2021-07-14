@@ -13,19 +13,7 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class MessageRecepient extends \DDEX\DDEXNode{
-    
-    /**
-     * IsDPID="true" IsISNI="false"
-     * @var \DDEX\DDEXSingleNode
-     */
-    public $PartyId;
-    
-    /**
-     * 
-     * @var PartyName
-     */
-    public $PartyName;
+class MessageRecipient extends MessageSender{
     
     
 }

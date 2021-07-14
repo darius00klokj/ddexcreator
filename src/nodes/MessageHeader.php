@@ -26,7 +26,7 @@ class MessageHeader extends \DDEX\DDEXNode {
 
     /**
      * 
-     * @var MessageRecepient
+     * @var MessageRecipient
      */
     public $MessageRecipient;
 
@@ -54,7 +54,7 @@ class MessageHeader extends \DDEX\DDEXNode {
         return $this->MessageSender;
     }
 
-    function getMessageRecipient(): MessageRecepient {
+    function getMessageRecipient(): MessageRecipient {
         return $this->MessageRecipient;
     }
 
@@ -74,7 +74,7 @@ class MessageHeader extends \DDEX\DDEXNode {
         $this->MessageSender = $MessageSender;
     }
 
-    function setMessageRecipient(MessageRecepient $MessageRecipient) {
+    function setMessageRecipient(MessageRecipient $MessageRecipient) {
         $this->MessageRecipient = $MessageRecipient;
     }
 
