@@ -26,13 +26,9 @@ class DDEXDateTime {
     }
     
     function getAsString(){
-        
         $time = $this->time ? $this->time : time();
-        
-        $date = date('Y-m-d', $time);
-        $hour = date('H:i:sP', $time);
-        
-        return sprintf('%sT%s', $date, $hour);
+        $date = date(DATE_ISO8601, $time);
+        return $date;
     }
 
 }
