@@ -26,6 +26,13 @@ class ResourceList extends \DDEX\DDEXNode{
      */
     public $SoundRecording;
     
+    function addSoundRecording(SoundRecording $sr){
+        if(!$this->SoundRecording){
+            $this->SoundRecording = [];
+        }
+        $this->SoundRecording[] = $sr;
+    }
+    
     function getImage(): Image {
         return $this->Image;
     }
