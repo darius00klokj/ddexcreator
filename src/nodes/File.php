@@ -6,7 +6,7 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class File {
+class File extends \DDEX\DDEXNode{
     
     /**
      * Just the file name

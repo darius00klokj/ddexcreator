@@ -13,7 +13,7 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class ImageDetailsByTerritory {
+class ImageDetailsByTerritory extends \DDEX\DDEXNode{
     
     public $TerritoryCode;
     
