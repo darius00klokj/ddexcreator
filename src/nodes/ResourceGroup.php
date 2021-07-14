@@ -77,7 +77,7 @@ class ResourceGroup extends \DDEX\DDEXNode{
         return $this->Title;
     }
 
-    function getSequenceNumber(): type {
+    function getSequenceNumber() {
         return $this->SequenceNumber;
     }
 
@@ -89,7 +89,7 @@ class ResourceGroup extends \DDEX\DDEXNode{
         $this->Title = $Title;
     }
 
-    function setSequenceNumber(type $SequenceNumber): void {
+    function setSequenceNumber($SequenceNumber): void {
         $this->SequenceNumber = $SequenceNumber;
     }
 

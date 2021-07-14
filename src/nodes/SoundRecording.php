@@ -34,7 +34,7 @@ class SoundRecording extends \DDEX\DDEXNode{
     
     /**
      * PT02M48S
-     * @var type
+     * @var string
      */
     public $Duration;
     
@@ -70,7 +70,7 @@ class SoundRecording extends \DDEX\DDEXNode{
         return $this->ReferenceTitle;
     }
 
-    function getDuration(): type {
+    function getDuration() {
         return $this->Duration;
     }
 
@@ -78,27 +78,27 @@ class SoundRecording extends \DDEX\DDEXNode{
         return $this->SoundRecordingDetailsByTerritory;
     }
 
-    function setSoundRecordingType($SoundRecordingType): void {
+    function setSoundRecordingType($SoundRecordingType) {
         $this->SoundRecordingType = $SoundRecordingType;
     }
 
-    function setSoundRecordingId(SoundRecordingId $SoundRecordingId): void {
+    function setSoundRecordingId(SoundRecordingId $SoundRecordingId) {
         $this->SoundRecordingId = $SoundRecordingId;
     }
 
-    function setResourceReference($ResourceReference): void {
+    function setResourceReference($ResourceReference) {
         $this->ResourceReference = $ResourceReference;
     }
 
-    function setReferenceTitle(ReferenceTitle $ReferenceTitle): void {
+    function setReferenceTitle(ReferenceTitle $ReferenceTitle) {
         $this->ReferenceTitle = $ReferenceTitle;
     }
 
-    function setDuration(type $Duration): void {
+    function setDuration($Duration) {
         $this->Duration = $Duration;
     }
 
-    function setSoundRecordingDetailsByTerritory(array $SoundRecordingDetailsByTerritory): void {
+    function setSoundRecordingDetailsByTerritory(array $SoundRecordingDetailsByTerritory) {
         $this->SoundRecordingDetailsByTerritory = $SoundRecordingDetailsByTerritory;
     }
 
