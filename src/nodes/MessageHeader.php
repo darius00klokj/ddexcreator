@@ -13,37 +13,35 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class MessageHeader extends \DDEX\DDEXNode{
-    
+class MessageHeader extends \DDEX\DDEXNode {
+
     public $MessageThreadId;
     public $MessageId;
-    
+
     /**
      * 
      * @var MessageSender
      */
     public $MessageSender;
-    
+
     /**
      * 
      * @var MessageRecepient
      */
     public $MessageRecipient;
-    
+
     /**
      * 2021-07-01T01:45:54.044878
      * @var type
      */
     public $MessageCreatedDateTime;
-    
     public $MessageControlType;
-    
+
     function __construct($MessageId, $MessageControlType = 'LiveMessage') {
         $this->MessageId = $MessageId;
         $this->MessageControlType = $MessageControlType;
     }
 
-    
     function getMessageThreadId() {
         return $this->MessageThreadId;
     }
@@ -68,29 +66,28 @@ class MessageHeader extends \DDEX\DDEXNode{
         return $this->MessageControlType;
     }
 
-    function setMessageThreadId($MessageThreadId): void {
+    function setMessageThreadId($MessageThreadId) {
         $this->MessageThreadId = $MessageThreadId;
     }
 
-    function setMessageId($MessageId): void {
+    function setMessageId($MessageId) {
         $this->MessageId = $MessageId;
     }
 
-    function setMessageSender(MessageSender $MessageSender): void {
+    function setMessageSender(MessageSender $MessageSender) {
         $this->MessageSender = $MessageSender;
     }
 
-    function setMessageRecipient(MessageRecepient $MessageRecipient): void {
+    function setMessageRecipient(MessageRecepient $MessageRecipient) {
         $this->MessageRecipient = $MessageRecipient;
     }
 
-    function setMessageCreatedDateTime(type $MessageCreatedDateTime): void {
+    function setMessageCreatedDateTime(type $MessageCreatedDateTime) {
         $this->MessageCreatedDateTime = $MessageCreatedDateTime;
     }
 
-    function setMessageControlType($MessageControlType): void {
+    function setMessageControlType($MessageControlType) {
         $this->MessageControlType = $MessageControlType;
     }
-
 
 }
