@@ -13,12 +13,11 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class IndirectResourceContributor extends \DDEX\DDEXNode{
-    
+class IndirectResourceContributor extends \DDEX\DDEXNode {
+
     const ROLE_COMPOSER = 'Composer';
     const ROLE_LYRICIST = 'Lyricist';
-        const ROLE_ARRANGER = 'Arranger';
-
+    const ROLE_ARRANGER = 'Arranger';
 
     /**
      * 
@@ -26,5 +25,37 @@ class IndirectResourceContributor extends \DDEX\DDEXNode{
      */
     public $PartyName;
     
+    /**
+     * 
+     * @var string
+     */
     public $IndirectResourceContributorRole;
+    
+    function __construct($name, $role) {
+        
+        $pn = new PartyName($name);
+        $this->PartyName = $pn;
+        $this->IndirectResourceContributorRole = $role;
+        
+    }
+
+    
+    function getPartyName(): PartyName {
+        return $this->PartyName;
+    }
+
+    function getIndirectResourceContributorRole(): string {
+        return $this->IndirectResourceContributorRole;
+    }
+
+    function setPartyName(PartyName $PartyName): void {
+        $this->PartyName = $PartyName;
+    }
+
+    function setIndirectResourceContributorRole(string $IndirectResourceContributorRole): void {
+        $this->IndirectResourceContributorRole = $IndirectResourceContributorRole;
+    }
+
+
+
 }
