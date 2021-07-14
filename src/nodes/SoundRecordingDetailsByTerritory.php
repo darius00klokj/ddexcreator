@@ -73,6 +73,15 @@ class SoundRecordingDetailsByTerritory {
         
         $this->DisplayArtist[] = $art;
     }
+    
+    function addIndirectResourceContributor(IndirectResourceContributor $ind ){
+        
+        if(!$this->IndirectResourceContributor){
+            $this->IndirectResourceContributor = [];
+        }
+        
+        $this->IndirectResourceContributor[] = $ind;
+    }
 
     function getTerritoryCode() {
         return $this->TerritoryCode;
