@@ -34,7 +34,7 @@ class SoundRecording extends \DDEX\DDEXNode{
     
     /**
      * PT02M48S
-     * @var string
+     * @var \DDEX\DDEXDuration 
      */
     public $Duration;
     
@@ -102,7 +102,7 @@ class SoundRecording extends \DDEX\DDEXNode{
         $this->ReferenceTitle = $ReferenceTitle;
     }
 
-    function setDuration($Duration) {
+    function setDuration(\DDEX\DDEXDuration $Duration) {
         $this->Duration = $Duration;
     }
 

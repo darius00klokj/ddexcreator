@@ -38,6 +38,10 @@ class TechnicalSoundRecordingDetails extends \DDEX\DDEXNode {
 
     public $BitsPerSample;
     
+    /**
+     * 
+     * @var \DDEX\DDEXDuration
+     */
     public $Duration;
     
     /**
@@ -104,7 +108,7 @@ class TechnicalSoundRecordingDetails extends \DDEX\DDEXNode {
         $this->BitsPerSample = $BitsPerSample;
     }
 
-    function setDuration($Duration): void {
+    function setDuration(\DDEX\DDEXDuration $Duration): void {
         $this->Duration = $Duration;
     }
     
