@@ -81,27 +81,27 @@ class ResourceGroup extends \DDEX\DDEXNode{
         return $this->SequenceNumber;
     }
 
-    function getResourceGroupContentItem(): array {
+    function getResourceGroupContentItem() {
         return $this->ResourceGroupContentItem;
     }
 
-    function setTitle(Title $Title): void {
+    function setTitle(Title $Title) {
         $this->Title = $Title;
     }
 
-    function setSequenceNumber($SequenceNumber): void {
+    function setSequenceNumber($SequenceNumber) {
         $this->SequenceNumber = $SequenceNumber;
     }
 
-    function setResourceGroupContentItem(array $ResourceGroupContentItem): void {
+    function setResourceGroupContentItem(array $ResourceGroupContentItem) {
         $this->ResourceGroupContentItem = $ResourceGroupContentItem;
     }
     
-    function getResourceGroup(): array {
+    function getResourceGroup() {
         return $this->ResourceGroup;
     }
 
-    function setResourceGroup(array $ResourceGroup): void {
+    function setResourceGroup(array $ResourceGroup) {
         $this->ResourceGroup = $ResourceGroup;
     }
 
