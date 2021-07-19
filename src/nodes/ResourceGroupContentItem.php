@@ -16,7 +16,7 @@ namespace DDEX\nodes;
 class ResourceGroupContentItem extends \DDEX\DDEXNode{
     
     const TYPE_SOUND_RECORDING = 'SoundRecording';
-    const TYPE_Image = 'Image';
+    const TYPE_IMAGE = 'Image';
     const RESOURCE_PRIMARY = 'PrimaryResource';
     const RESOURCE_SECONDAY = 'SecondaryResource'; // Images etc...
     

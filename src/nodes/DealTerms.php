@@ -10,6 +10,9 @@ namespace DDEX\nodes;
  */
 class DealTerms extends \DDEX\DDEXNode{
     
+    CONST TYPE_ConditionalDownload = 'ConditionalDownload';
+    CONST TYPE_Stream = 'Stream';
+    
     /**
      * 
      * @var Usage
@@ -24,6 +27,14 @@ class DealTerms extends \DDEX\DDEXNode{
      */
     public $ValidityPeriod;
     
+    function getDealTermTypes(){
+        
+        return [
+            'SubscriptionModel',
+            'AdvertisementSupportedModel',
+        ];
+        
+    }
     function getCommercialModelType() {
         return $this->CommercialModelType;
     }

@@ -16,6 +16,7 @@ namespace DDEX\nodes;
 class Image extends \DDEX\DDEXNode{
 
     const TYPE_FRONTCOVER = 'FrontCoverImage';
+    const CODEC_JPEG = 'JPEG';
     
     public $ImageType;
     public $ResourceReference;
