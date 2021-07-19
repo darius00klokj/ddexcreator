@@ -75,6 +75,8 @@ class Release extends \DDEX\DDEXNode {
         
         $ReleaseType = new \DDEX\DDEXSingleNode('ReleaseType', $type);
         $ReleaseType->addAttribute('UserDefinedValue', $type);
+        
+        $this->setReleaseType($ReleaseType);
     }
     
     function addReleaseDetailsByTerritory(ReleaseDetailsByTerritory $ReleaseDetailsByTerritory){
