@@ -17,7 +17,20 @@ class Usage extends \DDEX\DDEXNode{
     
     const NAME = 'Usage';
     
+    /**
+     * 
+     * @var array
+     */
     public $UseType;
+    
+    function addUseType($name){
+        
+        if(!$this->UseType){
+            $this->UseType = [];
+        }
+        
+        $this->UseType[] = new \DDEX\DDEXSingleNode('UseType', $name);
+    }
     
     function getUseType() {
         return $this->UseType;
