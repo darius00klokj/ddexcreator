@@ -37,7 +37,7 @@ class DDEXDuration {
         $model = 'PT%sM%sS';
         
         $minutes = floor($this->duration / 60); 
-        $secs = $this->duration % 60; 
+        $secs = intval($this->duration % 60); 
         
         return sprintf($model, $minutes, $secs);
         
