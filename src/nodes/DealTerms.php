@@ -27,7 +27,7 @@ class DealTerms extends \DDEX\DDEXNode{
      */
     public $ValidityPeriod;
     
-    function getDealTermTypes(){
+    static function getDealTermTypes(){
         
         return [
             'SubscriptionModel',
