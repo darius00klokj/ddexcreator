@@ -27,7 +27,8 @@ class DDEXDateTime {
     
     function getAsString(){
         $time = $this->time ? $this->time : time();
-        $date = date(DATE_ISO8601, $time);
+        //$date = date('YYYY-MM-DD\TH:i:sTZD', $time);
+        $date = date("Y-m-d\TH:i:s.000000", $time);
         return $date;
     }
 
