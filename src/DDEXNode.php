@@ -70,6 +70,10 @@ class DDEXNode {
                 /* @var $timeNode \DDEX\DDEXDateTime */
                 $timeNode = $value;
                 $sxe->addChild($name, $timeNode->getAsString());
+            } elseif (is_a($value, DDEXDuration::class)) {
+                /* @var $timeNode \DDEX\DDEXDuration */
+                $timeNode = $value;
+                $sxe->addChild($name, $timeNode->getAsString());
             } else {
                 $sxe->addChild($name, $value);
             }
