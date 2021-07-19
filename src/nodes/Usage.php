@@ -23,6 +23,10 @@ class Usage extends \DDEX\DDEXNode{
      */
     public $UseType;
     
+    /**
+     * 
+     * @param type $name
+     */
     function addUseType($name){
         
         if(!$this->UseType){
