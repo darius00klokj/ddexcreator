@@ -17,11 +17,11 @@ class ValidityPeriod extends \DDEX\DDEXNode{
     
     /**
      * 
-     * @var DDEXDateTime
+     * @var \DDEX\DDEXDateTime
      */
     public $StartDateTime;
     
-    function __construct(DDEXDateTime $StartDateTime) {
+    function __construct(\DDEX\DDEXDateTime $StartDateTime) {
         $this->StartDateTime = $StartDateTime;
     }
 
