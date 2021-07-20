@@ -13,13 +13,14 @@ class DealTerms extends \DDEX\DDEXNode{
     CONST TYPE_ConditionalDownload = 'ConditionalDownload';
     CONST TYPE_Stream = 'Stream';
     
+    public $CommercialModelType;
+    
     /**
      * 
      * @var Usage
      */
     public $Usage;
     public $TerritoryCode;
-    public $CommercialModelType;
     
     /**
      * 

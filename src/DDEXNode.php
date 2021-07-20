@@ -18,7 +18,7 @@ use DDEX\DDEXSingleNode;
 class DDEXNode {
 
     private $attrs = [];
-
+    
     /**
      * 
      * @return \SimpleXMLElement
