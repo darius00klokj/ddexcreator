@@ -18,8 +18,9 @@ class IndirectResourceContributor extends \DDEX\DDEXNode {
     const ROLE_COMPOSER = 'Composer';
     const ROLE_LYRICIST = 'Lyricist';
     const ROLE_ARRANGER = 'Arranger';
-    const ROLE_PUBLISHER = 'Publisher';
+    const ROLE_PUBLISHER = 'MusicPublisher';
     const ROLE_PRODUCER = 'Producer';
+    const ROLE_FEATUREDARTIST = 'FeaturedArtist';
 
     /**
      * 
