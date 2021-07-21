@@ -13,7 +13,41 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class MessageRecipient extends MessageSender{
+class MessageRecipient extends \DDEX\DDEXNode{
     
+     
+    /**
+     * IsDPID="true" IsISNI="false"
+     * @var \DDEX\DDEXSingleNode
+     */
+    public $PartyId;
     
+    /**
+     * 
+     * @var PartyName
+     */
+    public $PartyName;
+    
+    function __construct(\DDEX\DDEXSingleNode $PartyId, PartyName $PartyName) {
+        $this->PartyId = $PartyId;
+        $this->PartyName = $PartyName;
+    }
+    
+    function getPartyId(): \DDEX\DDEXSingleNode {
+        return $this->PartyId;
+    }
+
+    function getPartyName(): PartyName {
+        return $this->PartyName;
+    }
+
+    function setPartyId(\DDEX\DDEXSingleNode $PartyId): void {
+        $this->PartyId = $PartyId;
+    }
+
+    function setPartyName(PartyName $PartyName): void {
+        $this->PartyName = $PartyName;
+    }
+
+
 }

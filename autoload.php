@@ -9,19 +9,21 @@ $dir = 'src';
 includeFile($dir);
 
 function includeFile($dir_or_file) {
-    
-    if(is_file($dir_or_file)){
+
+    if (is_file($dir_or_file) && strpos($dir_or_file, '.php') !== false) {
         include_once $dir_or_file;
         return;
     }
-    
-    $files = scandir($dir_or_file);
-    foreach ($files as $file) {
-        if ($file === '.' || $file === '..') {
-            continue;
+
+    if (is_dir($dir_or_file)) {
+        $files = scandir($dir_or_file);
+        foreach ($files as $file) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+
+            $file = sprintf('%s/%s', $dir_or_file, $file);
+            includeFile($file);
         }
-        
-        $file = sprintf('%s/%s', $dir_or_file, $file);
-        includeFile($file);
     }
 }

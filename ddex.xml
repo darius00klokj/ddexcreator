@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage 
+    xmlns:ern="http://ddex.net/xml/ern/382" 
+    xmlns:avs="http://ddex.net/xml/avs/avs" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+    xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd" 
+    MessageSchemaVersionId="ern/382" LanguageAndScriptCode="en">
+    <MessageHeader>
+        <MessageThreadId>TH-5577-1626768270</MessageThreadId>
+        <MessageId>5577-1626768270</MessageId>
+        <MessageSender>
+            <PartyId IsDPID="true" IsISNI="false">PADPIDA2020020406M</PartyId>
+            <PartyName>
+                <FullName>Chillhop Music</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId IsDPID="true" IsISNI="false">PADPIDA2019040804V</PartyId>
+            <PartyName>
+                <FullName>Sound Republica, Inc.</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2021-07-20T08:04:30.000000</MessageCreatedDateTime>
+        <MessageControlType>LiveMessage</MessageControlType>
+    </MessageHeader>
+    <UpdateIndicator>UpdateMessage</UpdateIndicator>
+    <ResourceList>
+        <SoundRecording IsUpdated="true">
+            <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+            <SoundRecordingId>
+                <ISRC>NL1LE2102332</ISRC>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </SoundRecordingId>
+            <ResourceReference>A5653</ResourceReference>
+            <ReferenceTitle>
+                <TitleText>Be Here Now</TitleText>
+            </ReferenceTitle>
+            <Duration>PT2M24S</Duration>
+            <SoundRecordingDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <Title TitleType="DisplayTitle">
+                    <TitleText>Be Here Now</TitleText>
+                </Title>
+                <Title TitleType="FormalTitle">
+                    <TitleText>Be Here Now</TitleText>
+                </Title>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>chief.</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <IndirectResourceContributor SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Nathan Martinez</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="3">
+                    <PartyName>
+                        <FullName>Yasper Molle</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="4">
+                    <PartyName>
+                        <FullName>Bas Nuiver</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="5">
+                    <PartyName>
+                        <FullName>Rowan de Vos</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="6">
+                    <PartyName>
+                        <FullName>Koen Herfst</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <LabelName LabelNameType="DisplayLabelName">Chillhop Music</LabelName>
+                <PLine>
+                    <Year>2021</Year>
+                    <PLineText>Chillhop Music</PLineText>
+                </PLine>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <TechnicalSoundRecordingDetails>
+                    <TechnicalResourceDetailsReference>T21775</TechnicalResourceDetailsReference>
+                    <AudioCodecType>WAV</AudioCodecType>
+                    <Duration>PT2M24S</Duration>
+                    <File>
+                        <FileName>745051301132_0001.wav</FileName>
+                        <FilePath>resources/</FilePath>
+                        <HashSum>
+                            <HashSum/>
+                            <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                </TechnicalSoundRecordingDetails>
+            </SoundRecordingDetailsByTerritory>
+        </SoundRecording>
+        <SoundRecording IsUpdated="true">
+            <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+            <SoundRecordingId>
+                <ISRC>NL1LE2102334</ISRC>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </SoundRecordingId>
+            <ResourceReference>A5655</ResourceReference>
+            <ReferenceTitle>
+                <TitleText>LuvnYou</TitleText>
+            </ReferenceTitle>
+            <Duration>PT3M22S</Duration>
+            <SoundRecordingDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <Title TitleType="DisplayTitle">
+                    <TitleText>LuvnYou</TitleText>
+                </Title>
+                <Title TitleType="FormalTitle">
+                    <TitleText>LuvnYou</TitleText>
+                </Title>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Ian Ewing</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <IndirectResourceContributor SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Ian Ewing</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="3">
+                    <PartyName>
+                        <FullName>Yasper Molle</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="4">
+                    <PartyName>
+                        <FullName>Bas Nuiver</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="5">
+                    <PartyName>
+                        <FullName>Rowan de Vos</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="6">
+                    <PartyName>
+                        <FullName>Koen Herfst</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <LabelName LabelNameType="DisplayLabelName">Chillhop Music</LabelName>
+                <PLine>
+                    <Year>2021</Year>
+                    <PLineText>Chillhop Music</PLineText>
+                </PLine>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <TechnicalSoundRecordingDetails>
+                    <TechnicalResourceDetailsReference>T21777</TechnicalResourceDetailsReference>
+                    <AudioCodecType>WAV</AudioCodecType>
+                    <Duration>PT3M22S</Duration>
+                    <File>
+                        <FileName>745051301132_0002.wav</FileName>
+                        <FilePath>resources/</FilePath>
+                        <HashSum>
+                            <HashSum/>
+                            <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                </TechnicalSoundRecordingDetails>
+            </SoundRecordingDetailsByTerritory>
+        </SoundRecording>
+        <SoundRecording IsUpdated="true">
+            <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+            <SoundRecordingId>
+                <ISRC>NL1LE2102333</ISRC>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </SoundRecordingId>
+            <ResourceReference>A5654</ResourceReference>
+            <ReferenceTitle>
+                <TitleText>Belly Breathing</TitleText>
+            </ReferenceTitle>
+            <Duration>PT2M52S</Duration>
+            <SoundRecordingDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <Title TitleType="DisplayTitle">
+                    <TitleText>Belly Breathing</TitleText>
+                </Title>
+                <Title TitleType="FormalTitle">
+                    <TitleText>Belly Breathing</TitleText>
+                </Title>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Birocratic</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <IndirectResourceContributor SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Brandon Rowan</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="3">
+                    <PartyName>
+                        <FullName>Yasper Molle</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="4">
+                    <PartyName>
+                        <FullName>Bas Nuiver</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="5">
+                    <PartyName>
+                        <FullName>Rowan de Vos</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="6">
+                    <PartyName>
+                        <FullName>Koen Herfst</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <LabelName LabelNameType="DisplayLabelName">Chillhop Music</LabelName>
+                <PLine>
+                    <Year>2021</Year>
+                    <PLineText>Chillhop Music</PLineText>
+                </PLine>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <TechnicalSoundRecordingDetails>
+                    <TechnicalResourceDetailsReference>T21776</TechnicalResourceDetailsReference>
+                    <AudioCodecType>WAV</AudioCodecType>
+                    <Duration>PT2M52S</Duration>
+                    <File>
+                        <FileName>745051301132_0003.wav</FileName>
+                        <FilePath>resources/</FilePath>
+                        <HashSum>
+                            <HashSum/>
+                            <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                </TechnicalSoundRecordingDetails>
+            </SoundRecordingDetailsByTerritory>
+        </SoundRecording>
+        <SoundRecording IsUpdated="true">
+            <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+            <SoundRecordingId>
+                <ISRC>NL1LE2102335</ISRC>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </SoundRecordingId>
+            <ResourceReference>A5656</ResourceReference>
+            <ReferenceTitle>
+                <TitleText>Slopes</TitleText>
+            </ReferenceTitle>
+            <Duration>PT3M12S</Duration>
+            <SoundRecordingDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <Title TitleType="DisplayTitle">
+                    <TitleText>Slopes</TitleText>
+                </Title>
+                <Title TitleType="FormalTitle">
+                    <TitleText>Slopes</TitleText>
+                </Title>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Yasper</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Philanthrope</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <IndirectResourceContributor SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Yasper Molle</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="3">
+                    <PartyName>
+                        <FullName>Simon Leidner</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="4">
+                    <PartyName>
+                        <FullName>Bas Nuiver</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="5">
+                    <PartyName>
+                        <FullName>Rowan de Vos</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="6">
+                    <PartyName>
+                        <FullName>Koen Herfst</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <LabelName LabelNameType="DisplayLabelName">Chillhop Music</LabelName>
+                <PLine>
+                    <Year>2021</Year>
+                    <PLineText>Chillhop Music</PLineText>
+                </PLine>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <TechnicalSoundRecordingDetails>
+                    <TechnicalResourceDetailsReference>T21778</TechnicalResourceDetailsReference>
+                    <AudioCodecType>WAV</AudioCodecType>
+                    <Duration>PT3M12S</Duration>
+                    <File>
+                        <FileName>745051301132_0004.wav</FileName>
+                        <FilePath>resources/</FilePath>
+                        <HashSum>
+                            <HashSum/>
+                            <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                </TechnicalSoundRecordingDetails>
+            </SoundRecordingDetailsByTerritory>
+        </SoundRecording>
+        <SoundRecording IsUpdated="true">
+            <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+            <SoundRecordingId>
+                <ISRC>NL1LE2102331</ISRC>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </SoundRecordingId>
+            <ResourceReference>A5652</ResourceReference>
+            <ReferenceTitle>
+                <TitleText>Almost Home</TitleText>
+            </ReferenceTitle>
+            <Duration>PT2M36S</Duration>
+            <SoundRecordingDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <Title TitleType="DisplayTitle">
+                    <TitleText>Almost Home</TitleText>
+                </Title>
+                <Title TitleType="FormalTitle">
+                    <TitleText>Almost Home</TitleText>
+                </Title>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Sugi.wa</FullName>
+                    </PartyName>
+                    <ArtistRole>FeaturedArtist</ArtistRole>
+                </DisplayArtist>
+                <IndirectResourceContributor SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2">
+                    <PartyName>
+                        <FullName>Will Goldsmith</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="3">
+                    <PartyName>
+                        <FullName>Yasper Molle</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="4">
+                    <PartyName>
+                        <FullName>Bas Nuiver</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="5">
+                    <PartyName>
+                        <FullName>Rowan de Vos</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <IndirectResourceContributor SequenceNumber="6">
+                    <PartyName>
+                        <FullName>Koen Herfst</FullName>
+                    </PartyName>
+                    <IndirectResourceContributorRole>Composer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <LabelName LabelNameType="DisplayLabelName">Chillhop Music</LabelName>
+                <PLine>
+                    <Year>2021</Year>
+                    <PLineText>Chillhop Music</PLineText>
+                </PLine>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <TechnicalSoundRecordingDetails>
+                    <TechnicalResourceDetailsReference>T21774</TechnicalResourceDetailsReference>
+                    <AudioCodecType>WAV</AudioCodecType>
+                    <Duration>PT2M36S</Duration>
+                    <File>
+                        <FileName>745051301132_0005.wav</FileName>
+                        <FilePath>resources/</FilePath>
+                        <HashSum>
+                            <HashSum/>
+                            <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                </TechnicalSoundRecordingDetails>
+            </SoundRecordingDetailsByTerritory>
+        </SoundRecording>
+    </ResourceList>
+    <ReleaseList>
+        <Release IsMainRelease="true">
+            <ReleaseId>
+                <ICPN>745051301132</ICPN>
+                <CatalogNumber Namespace="PADPIDA2020020406M">CR327</CatalogNumber>
+            </ReleaseId>
+            <ReleaseReference>R5577</ReleaseReference>
+            <ReferenceTitle>
+                <TitleText>Chillhop Music Sessions</TitleText>
+            </ReferenceTitle>
+            <ReleaseType>EP</ReleaseType>
+            <ReleaseDetailsByTerritory>
+                <TerritoryCode>Worldwide</TerritoryCode>
+                <DisplayArtist SequenceNumber="1">
+                    <PartyName>
+                        <FullName>Chillhop Music</FullName>
+                    </PartyName>
+                    <ArtistRole>MainArtist</ArtistRole>
+                </DisplayArtist>
+                <ParentalWarningType>NotExplicit</ParentalWarningType>
+                <ResourceGroup>
+                    <ResourceGroup>
+                        <Title TitleType="GroupingTitle">
+                            <TitleText>Side A</TitleText>
+                        </Title>
+                        <SequenceNumber>1</SequenceNumber>
+                        <ResourceGroupContentItem>
+                            <SequenceNumber>1</SequenceNumber>
+                            <ResourceType>SoundRecording</ResourceType>
+                            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5653</ReleaseResourceReference>
+                        </ResourceGroupContentItem>
+                        <ResourceGroupContentItem>
+                            <SequenceNumber>2</SequenceNumber>
+                            <ResourceType>SoundRecording</ResourceType>
+                            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5655</ReleaseResourceReference>
+                        </ResourceGroupContentItem>
+                        <ResourceGroupContentItem>
+                            <SequenceNumber>3</SequenceNumber>
+                            <ResourceType>SoundRecording</ResourceType>
+                            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5654</ReleaseResourceReference>
+                        </ResourceGroupContentItem>
+                        <ResourceGroupContentItem>
+                            <SequenceNumber>4</SequenceNumber>
+                            <ResourceType>SoundRecording</ResourceType>
+                            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5656</ReleaseResourceReference>
+                        </ResourceGroupContentItem>
+                        <ResourceGroupContentItem>
+                            <SequenceNumber>5</SequenceNumber>
+                            <ResourceType>SoundRecording</ResourceType>
+                            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5652</ReleaseResourceReference>
+                        </ResourceGroupContentItem>
+                    </ResourceGroup>
+                </ResourceGroup>
+                <Genre>
+                    <GenreText>Hip Hop</GenreText>
+                    <SubGenre>Alternative</SubGenre>
+                </Genre>
+                <ReleaseDate>2021-07-14</ReleaseDate>
+            </ReleaseDetailsByTerritory>
+        </Release>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R5577</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <Usage>
+                        <UseType>ConditionalDownload</UseType>
+                        <UseType>Stream</UseType>
+                    </Usage>
+                    <TerritoryCode>Worldwide</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2021-07-14T00:00:00.000000</StartDateTime>
+                    </ValidityPeriod>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+        <ReleaseDeal>
+            <DealReleaseReference>R5577</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <Usage>
+                        <UseType>ConditionalDownload</UseType>
+                        <UseType>Stream</UseType>
+                    </Usage>
+                    <TerritoryCode>Worldwide</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2021-07-14T00:00:00.000000</StartDateTime>
+                    </ValidityPeriod>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ern:NewReleaseMessage>
