@@ -28,16 +28,16 @@ class ResourceGroup extends \DDEX\DDEXNode{
     public $SequenceNumber;
     
     /**
-     * 
-     * @var ResourceGroupContentItem[]
-     */
-    public $ResourceGroupContentItem;
-    
-    /**
      * A ResourceGroup can have ResourceGroup inside
      * @var ResourceGroup[]
      */
     public $ResourceGroup;
+    
+    /**
+     * 
+     * @var ResourceGroupContentItem[]
+     */
+    public $ResourceGroupContentItem;
     
     function __construct(string $title = NULL) {
         if($title){
