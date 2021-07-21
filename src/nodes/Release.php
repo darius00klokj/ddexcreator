@@ -24,6 +24,7 @@ class Release extends \DDEX\DDEXNode {
     const TYPE_ALBUM = 'album';
     const TYPE_COMPILATION = 'compilation';
     const TYPE_SINGLE = 'single';
+    const TYPE_TRACK_RELEASE = 'TrackRelease';
     
     /**
      * 
@@ -71,10 +72,16 @@ class Release extends \DDEX\DDEXNode {
     function __construct($title, $type, $isMain = true) {
         
         $this->setReferenceTitle(new ReferenceTitle($title));
-        $this->addAttr('IsMainRelease', $isMain ? 'true' : 'false');
+        if($isMain){
+            $this->addAttr('IsMainRelease', 'true');
+        }
         
-        $ReleaseType = new \DDEX\DDEXSingleNode('ReleaseType', $type);
-        $ReleaseType->addAttribute('UserDefinedValue', $type);
+        if($type !== static::TYPE_TRACK_RELEASE){
+            $ReleaseType = new \DDEX\DDEXSingleNode('ReleaseType', 'UserDefined');
+            $ReleaseType->addAttribute('UserDefinedValue', $type);
+        }else{
+            $ReleaseType = new \DDEX\DDEXSingleNode('ReleaseType', static::TYPE_TRACK_RELEASE);
+        }
         
         $this->setReleaseType($ReleaseType);
     }
