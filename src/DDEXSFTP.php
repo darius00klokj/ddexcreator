@@ -20,7 +20,7 @@ class DDEXSFTP {
     private $port;
     private $password;
     private $connection;
-    
+
     /**
      * 
      * @var \Net_SFTP
@@ -28,14 +28,15 @@ class DDEXSFTP {
     private $sftp;
 
     function __construct($host, $user = '', $password = '', $port = 22) {
+
+        include_once dirname(__FILE__) . '/phpseclib/autoload.php';
+
         $this->user = $user;
         $this->host = $host;
         $this->password = $password;
         $this->port = $port;
-        
-        $this->login();
-        $this->delete('/test/ddex.xml');
 
+        $this->login();
     }
 
     /**
@@ -50,7 +51,7 @@ class DDEXSFTP {
         if (!$this->sftp->login($this->getUser(), $this->getPassword())) {
             throw \Exception('Unable to login to SFTP server.');
         }
-        
+
         return true;
     }
 
@@ -65,7 +66,7 @@ class DDEXSFTP {
     public function uploadFile($local_file, $remote_file) {
         return $this->sftp->put($remote_file, $local_file, NET_SFTP_LOCAL_FILE);
     }
-    
+
     /**
      * Uploads a file to the SFTP server.
      * 
@@ -77,7 +78,7 @@ class DDEXSFTP {
     public function read($remote_file) {
         return $this->sftp->stat($remote_file);
     }
-    
+
     /**
      * Uploads a file to the SFTP server.
      * 
