@@ -13,22 +13,26 @@ namespace DDEX\nodes;
  *
  * @author darius
  */
-class Image extends \DDEX\DDEXNode{
+class Image extends \DDEX\DDEXNode {
 
     const TYPE_FRONTCOVER = 'FrontCoverImage';
     const CODEC_JPEG = 'JPEG';
-    
+
     public $ImageType;
-    public $ResourceReference;
-    
+
+    /**
+     * 
+     * @var ImageId
+     */
     public $ImageId;
-    
+    public $ResourceReference;
+
     /**
      * 
      * @var ImageDetailsByTerritory
      */
     public $ImageDetailsByTerritory;
-    
+
     function getImageType() {
         return $this->ImageType;
     }
