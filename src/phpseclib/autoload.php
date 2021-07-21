@@ -1,8 +1,5 @@
 <?php
 
-$dir = '.';
-ddex_includeFile($dir);
-
 if (!function_exists('ddex_includeFile')) {
 
     function ddex_includeFile($dir_or_file) {
@@ -24,5 +21,7 @@ if (!function_exists('ddex_includeFile')) {
             }
         }
     }
-
 }
+
+$dir = '.';
+ddex_includeFile($dir);
