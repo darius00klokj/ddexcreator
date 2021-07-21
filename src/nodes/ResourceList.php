@@ -14,17 +14,18 @@ namespace DDEX\nodes;
  * @author darius
  */
 class ResourceList extends \DDEX\DDEXNode{
-    /**
-     * 
-     * @var Image
-     */
-    public $Image;
     
     /**
      * 
      * @var SoundRecording[]
      */
     public $SoundRecording;
+    
+    /**
+     * 
+     * @var Image
+     */
+    public $Image;
     
     function addSoundRecording(SoundRecording $sr){
         if(!$this->SoundRecording){
