@@ -17,11 +17,11 @@ if (!function_exists('ddex_includeFile')) {
                 }
 
                 $file = sprintf('%s/%s', $dir_or_file, $file);
+                echo $file;
                 ddex_includeFile($file);
             }
         }
     }
 }
 
-$dir = '.';
-ddex_includeFile($dir);
+ddex_includeFile(dirname(__FILE__));

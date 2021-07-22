@@ -49,7 +49,7 @@ class DDEXSFTP {
 
         $this->sftp = new \Net_SFTP($this->getHost());
         if (!$this->sftp->login($this->getUser(), $this->getPassword())) {
-            throw \Exception('Unable to login to SFTP server.');
+            throw new Exception('Unable to login to SFTP server.');
         }
 
         return true;
@@ -64,6 +64,12 @@ class DDEXSFTP {
      * @throws Exception
      */
     public function uploadFile($local_file, $remote_file) {
+        
+        /**
+         * Lets first create the file
+         */
+        $this->sftp->mkdir(dirname($remote_file));
+        
         return $this->sftp->put($remote_file, $local_file, NET_SFTP_LOCAL_FILE);
     }
 
