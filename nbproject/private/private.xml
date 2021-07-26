@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/src/phpseclib/autoload.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/src/nodes/MessageSender.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/src/phpseclib/Net/SFTP.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/autoload.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/src/nodes/MessageRecipient.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/src/DDEXSFTP.php</file>
-            <file>file:/Volumes/Development/Dropbox/Projects/packages/php/ddexcreator/test.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
