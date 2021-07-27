@@ -16,7 +16,7 @@ namespace DDEX\nodes;
 class TechnicalSoundRecordingDetails extends \DDEX\DDEXNode {
 
     const CODEC_FLAC = 'FLAC';
-    const CODEC_WAV = 'WAV';
+    const CODEC_WAV = 'PCM';
     const CODEC_MP3 = 'MP3';
 
     public $TechnicalResourceDetailsReference;
