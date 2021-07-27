@@ -161,11 +161,11 @@ class SoundRecordingDetailsByTerritory extends \DDEX\DDEXNode{
         $this->DisplayArtist = $DisplayArtist;
     }
     
-    function getTechnicalSoundRecordingDetails(): TechnicalSoundRecordingDetails {
+    function getTechnicalSoundRecordingDetails() {
         return $this->TechnicalSoundRecordingDetails;
     }
 
-    function setTechnicalSoundRecordingDetails(TechnicalSoundRecordingDetails $TechnicalSoundRecordingDetails): void {
+    function setTechnicalSoundRecordingDetails(TechnicalSoundRecordingDetails $TechnicalSoundRecordingDetails = NULL) {
         $this->TechnicalSoundRecordingDetails = $TechnicalSoundRecordingDetails;
     }
 
