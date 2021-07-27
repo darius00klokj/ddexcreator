@@ -17,6 +17,7 @@ class NewReleaseMessage extends \DDEX\DDEXNode{
     
     const MESSAGE_UPDATE = 'UpdateMessage';
     const MESSAGE_ORIGINAL = 'OriginalMessage';
+    const MESSAGE_TAKEDOWN = 'TakedownMessage';
     
     /**
      * 
