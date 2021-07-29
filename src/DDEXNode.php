@@ -75,7 +75,7 @@ class DDEXNode {
                 $timeNode = $value;
                 $sxe->addChild($name, $timeNode->getAsString());
             } else {
-                $sxe->addChild($name, $value);
+                $sxe->addChild($name, htmlspecialchars($value));
             }
         }
     }
